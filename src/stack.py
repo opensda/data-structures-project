@@ -1,3 +1,4 @@
+import copy
 class Node:
     """Класс для узла стека"""
 
@@ -38,4 +39,12 @@ class Stack:
 
         :return: данные удаленного элемента
         """
-        pass
+
+        if self.top is None:
+            return None
+        popped_data = self.top.data
+        self.top = self.top.next_node
+        return popped_data
+
+
+
