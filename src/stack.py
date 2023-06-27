@@ -19,6 +19,9 @@ class Stack:
         """Конструктор класса Stack"""
         self.top = None
 
+    def __str__(self):
+        f'{self.top}'
+
 
 
     def push(self, data):
